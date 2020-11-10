@@ -1,12 +1,4 @@
-.parent {
-  display: grid;
-  grid-gap: 0.5rem;
-  justify-content: center;
-  text-align: center;
-  margin: 5rem 0;
-  color: #fff;
-}
-
+.parent,
 .child {
   display: grid;
   grid-gap: 0.5rem;
