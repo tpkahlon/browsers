@@ -149,7 +149,6 @@ const processData = (i) => {
     !i.getAttribute("href").toLowerCase().includes("winamp") &&
     !i.getAttribute("href").toLowerCase().includes("wikimedia") &&
     !i.getAttribute("href").toLowerCase().includes("w3c") &&
-    !i.getAttribute("href").toLowerCase().includes("web_browser") &&
     !i.getAttribute("href").toLowerCase().includes("web_page") &&
     !i.getAttribute("href").toLowerCase().includes("web_standards") &&
     !i.getAttribute("href").toLowerCase().includes("web_storage") &&
@@ -160,8 +159,10 @@ const processData = (i) => {
     !i.getAttribute("href").toLowerCase().includes("websocket") &&
     !i.getAttribute("href").toLowerCase().includes("world_wide_web") &&
     !i.getAttribute("href").toLowerCase().includes("worldwideweb") &&
+    i.getAttribute("href").toLowerCase() !== "/wiki/web_browser" &&
     !i.getAttribute("href").toLowerCase().includes("x.25")
   ) {
+    console.log(i.getAttribute('href').toLowerCase());
     return i;
   }
 }
