@@ -23,11 +23,12 @@ const processData = (i) => {
     !i.getAttribute("title").toLowerCase().includes("nokia") &&
     !i.getAttribute("title").toLowerCase().includes("omni") &&
     !i.getAttribute("title").toLowerCase().includes("of web") &&
-    !i.getAttribute("title").toLowerCase().includes("qihoo_360") &&
+    !i.getAttribute("title").toLowerCase().includes("qihoo") &&
     !i.getAttribute("title").toLowerCase().includes("research") &&
     !i.getAttribute("title").toLowerCase().includes("realplayer") &&
     !i.getAttribute("title").toLowerCase().includes("rockmelt") &&
     !i.getAttribute("title").toLowerCase().includes("rss") &&
+    !i.getAttribute("title").toLowerCase().includes("spyglass") &&
     !i.getAttribute("title").toLowerCase().includes("tool") &&
     !i.getAttribute("title").toLowerCase().includes("wikipedia") &&
     !i.getAttribute("title").toLowerCase().includes("xpcom") &&
@@ -62,6 +63,7 @@ const processData = (i) => {
     !i.getAttribute("href").toLowerCase().includes("browsers") &&
     !i.getAttribute("href").toLowerCase().includes("browser_synchronization") &&
     !i.getAttribute("href").toLowerCase().includes("bt_group") &&
+    !i.getAttribute("href").toLowerCase().includes("catalog") &&
     !i.getAttribute("href").toLowerCase().includes("classilla") &&
     !i.getAttribute("href").toLowerCase().includes("compuserve") &&
     !i.getAttribute("href").toLowerCase().includes("cascading_style_sheets") &&
@@ -93,6 +95,7 @@ const processData = (i) => {
     !i.getAttribute("href").toLowerCase().includes("hp_touchpad") &&
     !i.getAttribute("href").toLowerCase().includes("html") &&
     !i.getAttribute("href").toLowerCase().includes("hypercard") &&
+    !i.getAttribute("href").toLowerCase().includes("intercon_systems_corporation") &&
     !i.getAttribute("href").toLowerCase().includes("ibm_lotus_symphony") &&
     !i.getAttribute("href").toLowerCase().includes("iceweasel") &&
     !i.getAttribute("href").toLowerCase().includes("ibox") &&
