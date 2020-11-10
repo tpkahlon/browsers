@@ -40,8 +40,13 @@ const processData = (i) => {
       .includes("Whole Internet User's Guide and Catalog") &&
     !i.getAttribute("href").toLowerCase().includes("_wars") &&
     !i.getAttribute("href").toLowerCase().includes("_in_a_") &&
-    !i.getAttribute("href").toLowerCase().includes("#") &&
-    !i.getAttribute("href").toLowerCase().includes("(") &&
+    !i.getAttribute("href").toLowerCase().includes("#browser") &&
+    !i.getAttribute("href").toLowerCase().includes("#release") &&
+    !i.getAttribute("href").toLowerCase().includes("(digital)") &&
+    !i.getAttribute("href").toLowerCase().includes("(programming") &&
+    !i.getAttribute("href").toLowerCase().includes("(online") &&
+    !i.getAttribute("href").toLowerCase().includes("(company") &&
+    !i.getAttribute("href").toLowerCase().includes("network)") &&
     !i.getAttribute("href").toLowerCase().includes("_pre_") &&
     !i.getAttribute("href").toLowerCase().includes("amigaos") &&
     !i.getAttribute("href").toLowerCase().includes("autism") &&
