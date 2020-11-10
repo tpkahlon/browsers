@@ -159,10 +159,9 @@ const processData = (i) => {
     !i.getAttribute("href").toLowerCase().includes("websocket") &&
     !i.getAttribute("href").toLowerCase().includes("world_wide_web") &&
     !i.getAttribute("href").toLowerCase().includes("worldwideweb") &&
-    i.getAttribute("href").toLowerCase() !== "/wiki/web_browser" &&
-    !i.getAttribute("href").toLowerCase().includes("x.25")
+    !i.getAttribute("href").toLowerCase().includes("x.25") &&
+    i.getAttribute("href").toLowerCase() !== "/wiki/web_browser"
   ) {
-    console.log(i.getAttribute('href').toLowerCase());
     return i;
   }
 }
