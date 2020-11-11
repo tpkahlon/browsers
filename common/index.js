@@ -73,6 +73,7 @@ const processData = (i) => {
     !i.getAttribute("href").toLowerCase().includes("engine") &&
     !i.getAttribute("href").toLowerCase().includes("foundation") &&
     !i.getAttribute("href").toLowerCase().includes("facebook") &&
+    !i.getAttribute("href").toLowerCase().includes("file_upload") &&
     !i.getAttribute("href").toLowerCase().includes("gnuzilla") &&
     !i
       .getAttribute("href")
@@ -91,11 +92,16 @@ const processData = (i) => {
     !i.getAttribute("href").toLowerCase().includes("internet_explorer_shell") &&
     !i.getAttribute("href").toLowerCase().includes("javascript") &&
     !i.getAttribute("href").toLowerCase().includes("kde") &&
+    !i.getAttribute("href").toLowerCase().includes("k-meleon#") &&
+    !i.getAttribute("href").toLowerCase().includes("k-ninja") &&
     !i.getAttribute("href").toLowerCase().includes("libwww") &&
     !i.getAttribute("href").toLowerCase().includes("linux") &&
     !i.getAttribute("href").toLowerCase().includes("mac_os") &&
+    !i.getAttribute("href").toLowerCase().includes("macos") &&
+    !i.getAttribute("href").toLowerCase().includes("main_page") &&
     !i.getAttribute("href").toLowerCase().includes("msn_explorer") &&
     !i.getAttribute("href").toLowerCase().includes("microsoft_windows") &&
+    !i.getAttribute("href").toLowerCase().includes("netscape_browser") &&
     !i.getAttribute("href").toLowerCase().includes("operating_system") &&
     !i.getAttribute("href").toLowerCase().includes("private_browsing") &&
     !i.getAttribute("href").toLowerCase().includes("protocol") &&
@@ -104,6 +110,8 @@ const processData = (i) => {
     !i.getAttribute("href").toLowerCase().includes("planetweb") &&
     !i.getAttribute("href").toLowerCase().includes("plan_9_from_bell_labs") &&
     !i.getAttribute("href").toLowerCase().includes("qt_webengine") &&
+    !i.getAttribute("href").toLowerCase().includes("random") &&
+    !i.getAttribute("href").toLowerCase().includes("specialpages") &&
     !i.getAttribute("href").toLowerCase().includes("risc_os") &&
     !i.getAttribute("href").toLowerCase().includes("software") &&
     !i.getAttribute("href").toLowerCase().includes("specific") &&
@@ -141,6 +149,8 @@ const processData = (i) => {
     i.getAttribute("href") !== "/wiki/GNOME" &&
     i.getAttribute("href") !== "/wiki/RockMelt" &&
     i.getAttribute("href") !== "/wiki/Omniweb" &&
+    i.getAttribute("href") !== "/wiki/Internet_in_a_Box" &&
+    i.getAttribute("href") !== "/wiki/IBox" &&
     i.getAttribute("href").toLowerCase() !== "/wiki/nokia" &&
     i.getAttribute("href").toLowerCase() !== "/wiki/web_browser" &&
     i.getAttribute("href").toLowerCase() !== "/wiki/microsoft"
