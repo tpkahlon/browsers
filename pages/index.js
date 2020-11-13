@@ -1,23 +1,19 @@
 import Head from "next/head";
 import { uniqBy } from "lodash";
-import processData from "../common";
+import { processData, hasData, sortData, changeData } from "../common";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ text }) {
-  let browsers = [];
   let list = null;
+  let browsers = null;
   if (process.browser) {
     const parser = new DOMParser();
     const dom = parser.parseFromString(text, "text/html");
-    [...dom.querySelectorAll("a")].filter(processData).forEach((item) => {
-      browsers.push({
-        text: item.textContent,
-        url: item.getAttribute("href"),
-      });
-    });
-    browsers = browsers.sort((a, b) =>
-      a.text.toLowerCase() > b.text.toLowerCase() ? 1 : -1
-    );
+    browsers = [...dom.querySelectorAll("a")]
+      .filter(hasData)
+      .filter(processData)
+      .map(changeData)
+      .sort(sortData);
     browsers = uniqBy(browsers, "text");
     browsers = uniqBy(browsers, "url");
     list = (

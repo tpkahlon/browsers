@@ -1,0 +1,28 @@
+const removeTitles = [
+  "3d",
+  "at&t yahoo!",
+  "augmented browsing",
+  "category",
+  "comparison",
+  "communicator",
+  "edit",
+  "miro",
+  "mobile browser",
+  "mosaic-ck",
+  "maemo",
+  "netcaptor",
+  "nls",
+  "of web",
+  "qihoo",
+  "research",
+  "realplayer",
+  "rss",
+  "spyglass",
+  "tool",
+  "wikipedia",
+  "xpcom",
+  "xul",
+  "yahoo!",
+];
+
+export default removeTitles;
