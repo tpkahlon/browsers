@@ -1,5 +1,5 @@
 import keepTheseLinks from "./keepLinks";
-import keepTheseMatchingLinks from "./keepMatchingLinks";
+import removeTheseMatchingLinks from "./removeMatchingLinks";
 import removeTheseTitles from "./removeTitles";
 import removeTheseLinks from "./removeLinks";
 
@@ -33,7 +33,7 @@ const includeFunction = (i, data, key) => {
   return result.every((i) => i);
 };
 
-const includeMatchingFunction = (i, data, key) => {
+const excludeMatchingFunction = (i, data, key) => {
   let result = [];
   data.forEach((element) =>
     result.push(i.getAttribute(key).toLowerCase().trim() !== element)
@@ -47,15 +47,15 @@ const removeLinks = (i) => excludeFunction(i, removeTheseLinks, "href");
 
 const keepLinks = (i) => includeFunction(i, keepTheseLinks, "href");
 
-const keepMatchingLinks = (i) =>
-  includeMatchingFunction(i, keepTheseMatchingLinks, "href");
+const removeMatchingLinks = (i) =>
+  excludeMatchingFunction(i, removeTheseMatchingLinks, "href");
 
 const processData = (i) => {
   if (
     removeTitles(i) &&
     removeLinks(i) &&
     keepLinks(i) &&
-    keepMatchingLinks(i)
+    removeMatchingLinks(i)
   ) {
     return i;
   }

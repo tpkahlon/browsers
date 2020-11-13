@@ -1,4 +1,4 @@
-const keepMatchingLinks = [
+const removeMatchingLinks = [
   "/wiki/emacs/w3",
   "/wiki/gnu",
   "/wiki/gnome",
@@ -10,4 +10,4 @@ const keepMatchingLinks = [
   "/wiki/microsoft",
 ];
 
-export default keepMatchingLinks;
+export default removeMatchingLinks;
